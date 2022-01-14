@@ -18,7 +18,7 @@
 	"unpkg": "dist/cdn.min.js",
 	"scripts": {
 		"build": "node ./scripts/build.js",
-		"eslint": "node node_modules/eslint/bin/eslint.js --config ./scripts/.eslintrc.js src/**/*.js"
+		"eslint": "node node_modules/eslint/bin/eslint.js --config ./scripts/.eslintrc.js {src,builds}/**/*.js"
 	},
 	"peerDependencies": {
 		"alpinejs": ">=3.3.0"
