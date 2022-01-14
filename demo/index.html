@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alpine.js Intersect-Class Demo</title>
+    <style>
+        body {
+            background: white;
+            font: bold 1.5rem sans-serif;
+            padding: 1rem;
+        }
+
+        div {
+            height: 75vh;
+            background: #ccc;
+            padding: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        @keyframes fade-in {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        .fade-in {
+            animation: fade-in 500ms ease-out both;
+        }
+
+        @keyframes fade-left {
+            0% {
+                opacity: 0;
+                transform: translateX(50%);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        .fade-left {
+            animation: fade-left 500ms ease-out both;
+        }
+
+        @keyframes fade-up {
+            0% {
+                opacity: 0;
+                transform: translateY(50%);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .fade-up {
+            animation: fade-up 500ms ease-out both;
+        }
+    </style>
+</head>
+
+<body>
+    <div x-data x-intersect-class.once="fade-in" class="fade-in">
+        #1
+    </div>
+
+    <div x-data x-intersect-class.once="fade-left" class="fade-left">
+        #2
+    </div>
+
+    <div x-data x-intersect-class.once="fade-up" class="fade-up">
+        #3
+    </div>
+
+    <div x-data x-intersect-class.once="fade-in" class="fade-in">
+        #4
+    </div>
+
+    <div x-data x-intersect-class.once="fade-left" class="fade-left">
+        #5
+    </div>
+
+    <div x-data x-intersect-class.once="fade-up" class="fade-up">
+        #6
+    </div>
+
+    <script defer src="https://unpkg.com/alpinejs-intersect-class@1.x.x/dist/cdn.min.js"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</body>
+
+</html>
