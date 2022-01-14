@@ -4,6 +4,11 @@
     "description": "An Alpine.js plugin to easily add CSS classes to an element when it enters the viewport",
     "author": "Lars Heidkämper",
     "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/heidkaemper/alpinejs-intersect-class.git"
+    },
+    "homepage": "https://github.com/heidkaemper/alpinejs-intersect-class",
     "keywords": [
         "alpinejs",
         "alpine",
