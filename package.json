@@ -1,0 +1,31 @@
+{
+	"name": "alpinejs-intersect-class",
+	"version": "0.1.0",
+	"description": "",
+	"author": "Lars Heidkämper",
+	"license": "MIT",
+	"keywords": [
+		"alpinejs",
+		"alpine",
+		"intersect",
+		"intersection",
+		"animate",
+		"animation"
+	],
+	"main": "dist/module.cjs.js",
+	"module": "dist/module.esm.js",
+	"unpkg": "dist/cdn.min.js",
+	"scripts": {
+		"build": "node ./scripts/build.js",
+		"watch": "node ./scripts/build.js --watch"
+	},
+	"peerDependencies": {
+		"alpinejs": ">=3.3.0"
+	},
+	"devDependencies": {
+		"alpinejs": "^3.3",
+		"esbuild": "^0.14",
+		"eslint": "^8.0"
+	},
+	"dependencies": {}
+}
