@@ -1,6 +1,6 @@
 {
 	"name": "alpinejs-intersect-class",
-	"version": "0.1.0",
+	"version": "1.0.0",
 	"description": "An Alpine.js plugin to easily add CSS classes to an element when it enters the viewport",
 	"author": "Lars Heidkämper",
 	"license": "MIT",
