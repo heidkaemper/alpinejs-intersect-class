@@ -1,12 +1,13 @@
 {
 	"name": "alpinejs-intersect-class",
 	"version": "0.1.0",
-	"description": "",
+	"description": "An Alpine.js plugin to easily add CSS classes to an element when it enters the viewport",
 	"author": "Lars Heidkämper",
 	"license": "MIT",
 	"keywords": [
 		"alpinejs",
 		"alpine",
+		"plugin",
 		"intersect",
 		"intersection",
 		"animate",
@@ -17,7 +18,7 @@
 	"unpkg": "dist/cdn.min.js",
 	"scripts": {
 		"build": "node ./scripts/build.js",
-		"watch": "node ./scripts/build.js --watch"
+		"eslint": "node node_modules/eslint/bin/eslint.js --config ./scripts/.eslintrc.js src/**/*.js"
 	},
 	"peerDependencies": {
 		"alpinejs": ">=3.3.0"
