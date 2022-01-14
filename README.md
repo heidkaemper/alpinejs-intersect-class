@@ -10,7 +10,7 @@ You can include the CDN build of this plugin as a `<script>` tag, just make sure
 
 ```html
 <!-- This Plugin -->
-<script defer src="https://unpkg.com/alpine-intersect-class@1.x.x/dist/cdn.min.js"></script>
+<script defer src="https://unpkg.com/alpinejs-intersect-class@1.x.x/dist/cdn.min.js"></script>
 
 <!-- Alpine Core -->
 <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
@@ -27,9 +27,9 @@ Then initialize it from your bundle:
 
 ```js
 import Alpine from 'alpinejs'
-import intersect-class from 'intersect-class'
+import intersectClass from 'alpinejs-intersect-class'
 
-Alpine.plugin(intersect-class)
+Alpine.plugin(intersectClass)
 ```
 
 ## Usage
