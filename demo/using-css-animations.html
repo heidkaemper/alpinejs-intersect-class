@@ -4,12 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alpine.js Intersect-Class Demo</title>
+    <title>Alpine.js Intersect-Class - CSS Animations</title>
     <style>
         body {
             background: white;
-            font: bold 1.5rem sans-serif;
+            font: normal 1rem/1.5 sans-serif;
             padding: 1rem;
+            margin: 0;
+            overflow-x: hidden;
+        }
+
+        p {
+            margin: 0 0 3rem;
         }
 
         div {
@@ -28,10 +34,10 @@
             }
         }
         .fade-in {
-            animation: fade-in 500ms ease-out both;
+            animation: fade-in 1s ease-out both;
         }
 
-        @keyframes fade-left {
+        @keyframes fade-from-right {
             0% {
                 opacity: 0;
                 transform: translateX(50%);
@@ -41,49 +47,48 @@
                 transform: translateX(0);
             }
         }
-        .fade-left {
-            animation: fade-left 500ms ease-out both;
+        .fade-from-right {
+            animation: fade-from-right 1s ease-out both;
         }
 
-        @keyframes fade-up {
+        @keyframes fade-from-left {
             0% {
                 opacity: 0;
-                transform: translateY(50%);
+                transform: translateX(-50%);
             }
             100% {
                 opacity: 1;
-                transform: translateY(0);
+                transform: translateX(0);
             }
         }
-        .fade-up {
-            animation: fade-up 500ms ease-out both;
+        .fade-from-left {
+            animation: fade-from-left 1s ease-out both;
         }
     </style>
 </head>
 
 <body>
+    <h1>Demo - CSS Animations</h1>
+
+    <p>
+        This demo shows the Intersect-Class plugin in combination with CSS Animations.<br>
+        Demos for <a href="using-css-transitions.html">CSS Transitions</a> and <a href="using-tailwindcss.html">Tailwind CSS</a> are also available.
+    </p>
+
+    <div x-data x-intersect-class="fade-in" class="fade-in">
+        #1: Fade in
+    </div>
+
+    <div x-data x-intersect-class="fade-from-right" class="fade-from-right">
+        #2: Fade in from right
+    </div>
+
+    <div x-data x-intersect-class="fade-from-left" class="fade-from-left">
+        #3: Fade in from left
+    </div>
+
     <div x-data x-intersect-class.once="fade-in" class="fade-in">
-        #1
-    </div>
-
-    <div x-data x-intersect-class.once="fade-left" class="fade-left">
-        #2
-    </div>
-
-    <div x-data x-intersect-class.once="fade-up" class="fade-up">
-        #3
-    </div>
-
-    <div x-data x-intersect-class.once="fade-in" class="fade-in">
-        #4
-    </div>
-
-    <div x-data x-intersect-class.once="fade-left" class="fade-left">
-        #5
-    </div>
-
-    <div x-data x-intersect-class.once="fade-up" class="fade-up">
-        #6
+        #4: Fade in just once (no fade out)
     </div>
 
     <script defer src="https://unpkg.com/alpinejs-intersect-class@1.x.x/dist/cdn.min.js"></script>

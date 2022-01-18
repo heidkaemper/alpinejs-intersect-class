@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alpine.js Intersect-Class - Tailwind CSS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="h-full bg-white p-4 overflow-x-hidden">
+    <h1 class="font-bold text-3xl my-8">Demo - Tailwind CSS</h1>
+
+    <p class="mb-12">
+        This demo shows the Intersect-Class plugin in combination with <a href="https://tailwindcss.com/" class="underline">Tailwind CSS</a>.<br>
+        Demos for vanilla <a href="using-css-transitions.html" class="underline">CSS Transitions</a> and <a href="using-css-animations.html" class="underline">CSS Animations</a> are also available.
+    </p>
+
+    <div x-data x-intersect-class="opacity-100" class="h-3/4 bg-slate-300 p-4 mb-8 transition duration-1000 opacity-0">
+        #1: Fade in
+    </div>
+
+    <div x-data x-intersect-class="opacity-100 translate-x-0" class="h-3/4 bg-slate-300 p-4 mb-8 transition duration-1000 opacity-0 translate-x-1/2">
+        #2: Fade in from right
+    </div>
+
+    <div x-data x-intersect-class="opacity-100 translate-x-0" class="h-3/4 bg-slate-300 p-4 mb-8 transition duration-1000 opacity-0 -translate-x-1/2">
+        #3: Fade in from left
+    </div>
+
+    <div x-data x-intersect-class.once="opacity-100" class="h-3/4 bg-slate-300 p-4 mb-8 transition duration-1000 opacity-0">
+        #4: Fade in just once (no fade out)
+    </div>
+
+    <script defer src="https://unpkg.com/alpinejs-intersect-class@1.x.x/dist/cdn.min.js"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</body>
+
+</html>

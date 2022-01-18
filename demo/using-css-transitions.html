@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alpine.js Intersect-Class - CSS Transitions</title>
+    <style>
+        body {
+            background: white;
+            font: normal 1rem/1.5 sans-serif;
+            padding: 1rem;
+            margin: 0;
+            overflow-x: hidden;
+        }
+
+        p {
+            margin: 0 0 3rem;
+        }
+
+        div {
+            height: 75vh;
+            background: #ccc;
+            padding: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .fade-in {
+            opacity: 0;
+            transition: all 1s;
+        }
+
+        .fade-from-right {
+            opacity: 0;
+            transform: translateX(50%);
+            transition: all 1s;
+        }
+
+        .fade-from-left {
+            opacity: 0;
+            transform: translateX(-50%);
+            transition: all 1s;
+        }
+
+        .is-visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Demo - CSS Transitions</h1>
+
+    <p>
+        This demo shows the Intersect-Class plugin in combination with CSS Transitions.<br>
+        Demos for <a href="using-css-animations.html">CSS Animations</a> and <a href="using-tailwindcss.html">Tailwind CSS</a> are also available.
+    </p>
+
+    <div x-data x-intersect-class="is-visible" class="fade-in">
+        #1: Fade in
+    </div>
+
+    <div x-data x-intersect-class="is-visible" class="fade-from-right">
+        #2: Fade in from right
+    </div>
+
+    <div x-data x-intersect-class="is-visible" class="fade-from-left">
+        #3: Fade in from left
+    </div>
+
+    <div x-data x-intersect-class.once="is-visible" class="fade-in">
+        #4: Fade in just once (no fade out)
+    </div>
+
+    <script defer src="https://unpkg.com/alpinejs-intersect-class@1.x.x/dist/cdn.min.js"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</body>
+
+</html>
