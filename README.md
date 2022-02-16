@@ -52,7 +52,7 @@ Use the `x-intersect-class` Attribute to set the CSS class that should be added 
 ```html
 <div x-data x-intersect-class="fade-in"></div>
 ```
-Make shure that you have defined that class in your CSS files, like `fade-in` in this example.
+Make sure that you have defined that class in your CSS files, like `fade-in` in this example.
 
 ### The .once Modifier
 
