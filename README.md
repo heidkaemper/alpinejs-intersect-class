@@ -56,7 +56,7 @@ Make shure that you have defined that class in your CSS files, like `fade-in` in
 
 ### The .once Modifier
 
-Your can use the `.once` modifier if you want to trigger the CSS class only on the first appearance of an element.
+You can use the `.once` modifier if you want to trigger the CSS class only on the first appearance of an element.
 
 ```html
 <div x-data x-intersect-class.once="fade-in"></div>
