@@ -9,8 +9,8 @@ Especially useful for animating elements when scrolling.
 ```
 
 ### Demo
-[Click here to take a look at the examples](https://rawcdn.githack.com/heidkaemper/alpinejs-intersect-class/dc8a7a5c58bedf2797d9bed63419a96dc6bb9d6b/demo/using-tailwindcss.html)
-([View Source](https://github.com/heidkaemper/alpinejs-intersect-class/tree/main/demo))
+[Click here to take a look at the examples](https://heidkaemper.github.io/alpinejs-intersect-class/using-tailwindcss.html)
+([View Source](https://github.com/heidkaemper/alpinejs-intersect-class/tree/main/docs))
 
 ---
 
@@ -82,4 +82,4 @@ Yes, you do. With x-data you define a Alpine.js Component.<br>
 This is a known problem with JavaScript animations. It's because the JS takes a moment to initialize. The solution can be different depending on what kind of animation you want to run.
 
 A good starting point could be the use of [x-cloak](https://alpinejs.dev/directives/cloak).
-Initial use of the CSS class can also be helpful, like I did for the [CSS animation demo](https://github.com/heidkaemper/alpinejs-intersect-class/blob/main/demo/using-css-animations.html).
+Initial use of the CSS class can also be helpful, like I did for the [CSS animations demo](https://heidkaemper.github.io/alpinejs-intersect-class/using-css-animations.html).
