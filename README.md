@@ -83,3 +83,12 @@ This is a known problem with JavaScript animations. It's because the JS takes a 
 
 A good starting point could be the use of [x-cloak](https://alpinejs.dev/directives/cloak).
 Initial use of the CSS class can also be helpful, like I did for the [CSS animations demo](https://heidkaemper.github.io/alpinejs-intersect-class/using-css-animations.html).
+
+---
+
+<p>
+<a href="https://www.npmjs.com/package/alpinejs-intersect-class"><img src="https://img.shields.io/npm/v/alpinejs-intersect-class?label=version" alt="Version"></a>
+<a href="https://www.npmjs.com/package/alpinejs-intersect-class"><img src="https://img.shields.io/bundlephobia/minzip/alpinejs-intersect-class?label=size" alt="Bundle size"></a>
+<a href="https://www.npmjs.com/package/alpinejs-intersect-class"><img src="https://img.shields.io/npm/dt/alpinejs-intersect-class" alt="Downloads"></a>
+<a href="https://www.npmjs.com/package/alpinejs-intersect-class"><img src="https://img.shields.io/github/license/heidkaemper/alpinejs-intersect-class" alt="License"></a>
+</p>
