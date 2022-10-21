@@ -19,7 +19,7 @@
         "animation"
     ],
     "main": "dist/module.cjs.js",
-    "module": "dist/module.esm.js",
+    "module": "dist/module.js",
     "unpkg": "dist/cdn.min.js",
     "scripts": {
         "build": "node ./scripts/build.js",
