@@ -14,7 +14,7 @@ build({
 
 build({
     entryPoints: ['builds/module.js'],
-    outfile: 'dist/module.js',
+    outfile: 'dist/module.esm.js',
     platform: 'neutral',
     mainFields: ['main', 'module'],
 });
