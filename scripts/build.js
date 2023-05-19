@@ -9,7 +9,7 @@ build({
     entryPoints: ['builds/cdn.js'],
     outfile: 'dist/cdn.min.js',
     platform: 'browser',
-    define: { CDN: true },
+    define: { CDN: 'true' },
 });
 
 build({
