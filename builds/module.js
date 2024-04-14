@@ -1,3 +1,3 @@
-import intersectClass from './../src/index.js';
+import intersectClass from './../src/index.js'
 
-export default intersectClass;
+export default intersectClass

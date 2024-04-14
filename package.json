@@ -25,10 +25,11 @@
     ],
     "scripts": {
         "build": "node ./scripts/build.js",
-        "eslint": "node node_modules/eslint/bin/eslint.js --config ./scripts/.eslintrc.js {src,builds}/**/*.js"
+        "lint": "npx eslint {builds,scripts,src}/**/*.js",
+        "lint:fix": "npx eslint {builds,scripts,src}/**/*.js --fix"
     },
     "devDependencies": {
-        "esbuild": "^0.17",
-        "eslint": "^8.40"
+        "esbuild": "^0.20.2",
+        "eslint": "^8.57.0"
     }
 }

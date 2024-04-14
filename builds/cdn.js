@@ -1,5 +1,5 @@
-import intersectClass from './../src/index.js';
+import intersectClass from './../src/index.js'
 
 document.addEventListener('alpine:init', () => {
-    window.Alpine.plugin(intersectClass);
-});
+    window.Alpine.plugin(intersectClass)
+})

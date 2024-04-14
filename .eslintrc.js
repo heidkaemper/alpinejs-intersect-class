@@ -1,11 +1,12 @@
 module.exports = {
     "env": {
+        "node": true,
         "browser": true,
         "es6": true,
-        "amd": true
     },
     "extends": "eslint:recommended",
     "parserOptions": {
+        "ecmaVersion": 9,
         "sourceType": "module",
         "allowImportExportEverywhere": true
     },
@@ -20,7 +21,7 @@ module.exports = {
         ],
         "semi": [
             "error",
-            "always"
+            "never"
         ],
         "space-in-parens": [
             "error",
