@@ -1,8 +1,8 @@
 export default function (Alpine) {
     Alpine.directive('intersect-class', (el, { expression, modifiers }, { cleanup }) => {
-        let classes = expression.split(' ').filter(Boolean)
+        const classes = expression.split(' ').filter(Boolean)
 
-        let observer = new IntersectionObserver(entries => {
+        const observer = new IntersectionObserver(entries => {
             entries.forEach(entry => {
                 if (entry.intersectionRatio === 0) {
                     el.classList.remove(...classes)
@@ -14,7 +14,7 @@ export default function (Alpine) {
 
                 modifiers.includes('once') && observer.disconnect()
             })
-        })
+        }, { threshold: getThreshold(modifiers) })
 
         observer.observe(el)
 
@@ -22,4 +22,22 @@ export default function (Alpine) {
             observer.disconnect()
         })
     })
+}
+
+function getThreshold(modifiers) {
+    if (modifiers.includes('full')) {
+        return 0.99
+    }
+
+    if (modifiers.includes('half')) {
+        return 0.5
+    }
+
+    if (! modifiers.includes('threshold')) {
+        return 0
+    }
+
+    const threshold = modifiers[modifiers.indexOf('threshold') + 1]
+
+    return threshold === '1' ? 1 : Number(`.${threshold}`)
 }

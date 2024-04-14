@@ -32,6 +32,10 @@
         #4: Fade in just once (no fade out)
     </div>
 
+    <div x-data x-intersect-class.threshold.90="opacity-100" class="h-3/4 bg-slate-300 p-4 mb-8 transition duration-1000 opacity-0">
+        #5: Fade in when almost fully in viewport (threshold = 90)
+    </div>
+
     <script defer src="https://unpkg.com/alpinejs-intersect-class@1.x.x/dist/cdn.min.js"></script>
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </body>

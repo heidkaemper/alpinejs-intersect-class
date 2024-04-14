@@ -62,6 +62,10 @@ You can use the `.once` modifier if you want to trigger the CSS class only on th
 <div x-data x-intersect-class.once="fade-in"></div>
 ```
 
+### .threshold, .half and .full Modifier
+
+Control the `threshold` property of the IntersectionObserver. This works the same way like it does with Alpines [Intersect Plugin](https://alpinejs.dev/plugins/intersect#half).
+
 ## FAQ
 
 ### Couldn't I just use Alpines Intersect Plugin to do something like this?
