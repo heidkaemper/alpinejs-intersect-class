@@ -4,7 +4,7 @@ export default function (Alpine) {
 
         const observer = new IntersectionObserver(entries => {
             entries.forEach(entry => {
-                if (entry.intersectionRatio === 0) {
+                if (! entry.isIntersecting) {
                     el.classList.remove(...classes)
 
                     return
